@@ -14,7 +14,7 @@ export class ServersComponent implements OnInit {
   allowServer = false;
   serverCreationStatus = 'No server was created!';
 
-  serverName = '';
+  serverName = 'Test server';
 
   onUpdateServerName(event: Event) {
     console.log('TCL: ServersComponent -> onUpdateServerName -> event', event);

@@ -1,5 +1,10 @@
 <label class="form-label">Server Name</label>
-<input type="text" class="form-control" (input)="onUpdateServerName($event)" />
+
+<!-- To Set-up Event Binding -->
+<!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)" /> -->
+
+<!-- To Set-up Two Binding -->
+<input type="text" class="form-control" [(ngModel)]="serverName" />
 <P>{{ serverName }}</P>
 <button
   class="btn btn-primary"
