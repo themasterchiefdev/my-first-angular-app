@@ -15,6 +15,7 @@ export class ServersComponent implements OnInit {
   serverCreationStatus = 'No server was created!';
 
   serverName = 'Test server';
+  serverCreated = false;
 
   onUpdateServerName(event: Event) {
     console.log('TCL: ServersComponent -> onUpdateServerName -> event', event);
@@ -24,6 +25,7 @@ export class ServersComponent implements OnInit {
   ngOnInit() {}
 
   onCreateServer() {
+    this.serverCreated = true;
     return (this.serverCreationStatus = 'Server was created ' + this.serverName);
   }
 }
